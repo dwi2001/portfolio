@@ -252,7 +252,7 @@ button:hover {
     min-height: 70vh;
   }
   .NavbarLinks {
-    inset: 0 0 0 30%;
+    inset: 0 0 0 40%;
   }
   .HomeText h1 {
     font-weight: 500;
@@ -261,6 +261,12 @@ button:hover {
   .TypeEffect {
     font-weight: 500;
     font-size: 24px;
+  }
+  .buttonIcon {
+    margin-left: 10px;
+  }
+  .button {
+    font-size: 14px;
   }
 }
 
@@ -315,6 +321,10 @@ button:hover {
     width: 200px;
     margin-bottom: 75px;
   }
+
+  .buttonIcon {
+    margin-left: 10px;
+  }
 }
 
 /* Skills section */
@@ -326,7 +336,7 @@ button:hover {
 }
 
 .SkillBox {
-  width: max(15%, 150px);
+  width: max(20%, 150px);
   height: 150px;
   display: flex;
   align-items: center;
@@ -385,7 +395,10 @@ button:hover {
   .SkillBox {
     width: 100px;
     height: 100px;
-    font-size: 50px;
+  }
+
+  .buttonIcon {
+    margin-left: 5px; /* Sesuaikan dengan jumlah margin yang Anda inginkan */
   }
 }
 /* Project */
@@ -509,6 +522,7 @@ footer h4 {
   padding: 10px;
   border: none;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .form-group textarea {

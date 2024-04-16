@@ -18,21 +18,21 @@ const Home = () => {
           </h1>
           <Type />
           <Link to="/About">
-            <button>
+            <button className="button">
               About Me
               <BsPerson />
             </button>
           </Link>
 
           <Link to="/Contact">
-            <button>
+            <button className="button">
               Contact <CgPhone />
             </button>
           </Link>
         </div>
-        <Tilt>
+        {/* <Tilt>
           <img className="Avatar" src={avatar} alt="" />
-        </Tilt>
+        </Tilt> */}
       </div>
     </div>
   );

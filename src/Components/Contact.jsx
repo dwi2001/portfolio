@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    subject: "",
     email: "",
     message: "",
   });
@@ -17,28 +17,46 @@ const Contact = () => {
     });
   };
 
+  const handleEmailSubmit = (formData) => {
+    const email = "dwinfauzi@gmail.com";
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(formData.message);
+    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+
+    window.open(mailtoLink, "_blank");
+  };
+
+  const fromValid = (formData) => {
+    return formData.subject !== "" && formData.email !== "";
+  };
+
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted!");
-    setSubmitted(true);
+    if (fromValid(formData) !== null) {
+      console.log("Form submitted!");
+      setSubmitted(true);
+      handleEmailSubmit(formData);
+    } else {
+      console.log("Form validation failed!");
+    }
   };
 
   return (
     <div className="contact-container">
       <h2>Contact Me</h2>
       {submitted ? (
-        <p className="submitted-message">Message has been submitted!</p>
+        <p className="submitted-message">{"Message has been direct :)"}</p>
       ) : (
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+              id="subject"
+              name="subject"
+              value={formData.subject}
               onChange={handleChange}
               required
+              // className="textInput"
             />
           </div>
           <div className="form-group">
@@ -50,6 +68,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
+              // className="textInput"
             />
           </div>
           <div className="form-group">
@@ -62,10 +81,7 @@ const Contact = () => {
               required
             />
           </div>
-          <a
-            type="submit"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=dwinfauzi@gmail.com"
-          >
+          <a type="submit" target="blank">
             <button className="submit-btn">
               {" "}
               Submit

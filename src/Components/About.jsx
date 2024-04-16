@@ -39,11 +39,12 @@ const About = () => {
             <br />
             Apart from coding I love playing games and riding motorcycle.
           </p>
-          <a className="resume-btn">
-            <button onClick={handleDownload}>
-              Download Resume <FaFileDownload></FaFileDownload>
-            </button>
-          </a>
+          <button onClick={handleDownload} className="buttonDownload">
+            Download Resume
+            <div className="buttonIcon">
+              <FaFileDownload></FaFileDownload>
+            </div>
+          </button>
         </div>
         <div></div>
       </div>

@@ -10,7 +10,10 @@ const Footer = () => {
     <footer>
       <h4>Copyright &copy; {year}</h4>
       <div className="footerLinks">
-        <a href="" target="_blank">
+        <a
+          href="https://www.instagram.com/dwinugrahafauzi?igsh=Y3RhMGttNTQ3ZXh0"
+          target="_blank"
+        >
           <FaInstagram />
         </a>
 

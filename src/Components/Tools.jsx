@@ -20,7 +20,6 @@ const Tools = ({ Tools }) => {
   return (
     <div title={Tools} className="SkillBox">
       {iconTools[Tools] && <div>{iconTools[Tools]}</div>}
-      <a className="SkillTitle">{Tools}</a>
     </div>
   );
 };
