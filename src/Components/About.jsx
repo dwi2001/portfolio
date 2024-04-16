@@ -37,6 +37,7 @@ const About = () => {
             contribute and grow. Feel free to connect with me, links are in the
             footer.
             <br />
+            <br />
             Apart from coding I love playing games and riding motorcycle.
           </p>
           <button onClick={handleDownload} className="buttonDownload">
@@ -46,7 +47,6 @@ const About = () => {
             </div>
           </button>
         </div>
-        <div></div>
       </div>
 
       <h1 className="SkillsHeading"> Skillset</h1>

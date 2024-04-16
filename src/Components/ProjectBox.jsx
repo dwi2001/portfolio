@@ -15,8 +15,9 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
       "Optimization",
       "Deploy App to Google Playstore",
     ],
-    OlxIos: "https://github.com/EshaalB/Gym-Website",
-    OlxAndroid: "https://gym-website-pink.vercel.app/",
+    OlxIos: "https://apps.apple.com/in/app/olx-buy-sell-near-you/id913492792",
+    OlxAndroid:
+      "https://play.google.com/store/apps/details?id=com.app.tokobagus.betterb&hl=en&gl=US",
 
     MobbiDesc:
       "The Mobbi mobile app is incredibly useful for helping you find your dream used car, from purchase to trade-in and even test drives.",
