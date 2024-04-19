@@ -49,8 +49,7 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
       "https://play.google.com/store/apps/details?id=com.bti.halalpedia&hl=in",
     HalalpediaIos: "https://apps.apple.com/id/app/halalpedia/id1509193416",
 
-    PilihMarketDesc:
-      "This webpageis was made for an ecommerce brand showcasing their backpacks.The project taught me how to use custom cursors and arrange text in a much better way",
+    PilihMarketDesc: "mobile application for ordering gold purchases",
     PilihMarketJobdesc: [
       "Development Front End using React Native, ",
       "RESTfulAPI",
