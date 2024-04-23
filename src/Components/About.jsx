@@ -5,24 +5,6 @@ import Tools from "./Tools.jsx";
 import vscode from "../assets/vscode.png";
 
 const About = () => {
-  const handleDownload = () => {
-    // Menetapkan URL root aplikasi secara manual
-    const baseUrl = "http://localhost:5173";
-    // Konstruksi URL ke file PDF dalam folder assets
-    const pdfUrl = baseUrl + "/assets/DWINUGRAHAFAUZI.pdf";
-    // Buat elemen <a> untuk mengunduh file PDF
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.setAttribute("download", "DWINUGRAHAFAUZI.pdf");
-    // Sembunyikan elemen <a> dan tambahkan ke DOM
-    link.style.display = "none";
-    document.body.appendChild(link);
-    // Klik pada elemen <a> untuk mengunduh file
-    link.click();
-    // Hapus elemen <a> setelah unduhan selesai
-    document.body.removeChild(link);
-  };
-
   return (
     <>
       <div className="AboutPage">
@@ -40,7 +22,10 @@ const About = () => {
             <br />
             Apart from coding I love playing games and riding motorcycle.
           </p>
-          <button onClick={handleDownload} className="buttonDownload">
+          <button
+            onClick="window.open('https://drive.google.com/drive/my-drive?hl=id','_blank')"
+            className="buttonDownload"
+          >
             Download Resume
             <div className="buttonIcon">
               <FaFileDownload></FaFileDownload>

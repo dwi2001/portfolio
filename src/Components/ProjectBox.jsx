@@ -82,7 +82,6 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
         <h3
           style={{
             marginTop: 10,
-            // marginLeft: 10,
             textAlign: "left",
           }}
         >
