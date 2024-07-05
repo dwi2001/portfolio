@@ -2,25 +2,18 @@ import React from "react";
 import Skills from "./Skills.jsx";
 import { FaFileDownload } from "react-icons/fa";
 import Tools from "./Tools.jsx";
-import vscode from "../assets/vscode.png";
 
 const About = () => {
   const handleDownload = () => {
-    // Menetapkan URL root aplikasi secara manual
     const baseUrl =
-      "https://drive.google.com/file/d/1b1KWMFqKTrIHCR6xEPggieJpLyrkmMU9/view?usp=sharing";
-    // Konstruksi URL ke file PDF dalam folder assets
-    const pdfUrl = baseUrl + "/assets/DWINUGRAHAFAUZI.pdf";
-    // Buat elemen <a> untuk mengunduh file PDF
+      "https://drive.google.com/file/d/1enfBVLj8-rd6viWJPUEgsUL3nMKnmFLP/view?usp=sharing";
+    const pdfUrl = baseUrl;
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.setAttribute("download", "DWINUGRAHAFAUZI.pdf");
-    // Sembunyikan elemen <a> dan tambahkan ke DOM
     link.style.display = "none";
     document.body.appendChild(link);
-    // Klik pada elemen <a> untuk mengunduh file
     link.click();
-    // Hapus elemen <a> setelah unduhan selesai
     document.body.removeChild(link);
   };
 
